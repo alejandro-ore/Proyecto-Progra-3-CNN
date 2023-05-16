@@ -1,0 +1,1 @@
+aqui deberian de ir los archivos del dataset de mnist, pero no entran en github porque son muy pesados. instrucciones de como conseguirlos estaran en el README.md principal porque alli puedo poner imagenes.
