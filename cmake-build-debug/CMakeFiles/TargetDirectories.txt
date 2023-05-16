@@ -1,0 +1,3 @@
+/home/d4rkmn/Desktop/UTEC/Ciclo III/Programación III/Proyecto-v0/cmake-build-debug/CMakeFiles/Proyecto_v0.dir
+/home/d4rkmn/Desktop/UTEC/Ciclo III/Programación III/Proyecto-v0/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/d4rkmn/Desktop/UTEC/Ciclo III/Programación III/Proyecto-v0/cmake-build-debug/CMakeFiles/rebuild_cache.dir
