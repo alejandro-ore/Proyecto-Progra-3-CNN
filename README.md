@@ -2,6 +2,12 @@
 
 instrucciones para conseguir el mnist dataset:
 
+(si estas en windows el tutorial de abajo no funciona. solo si estas en linux. si estas en windows aqui esta el link de drive con los archivos)
+
+https://drive.google.com/drive/folders/1XqO0I2Rn7bwNorV7KZh8o73m22BYl3-e?usp=share_link
+
+(extrae los archivos en la carpeta "dataset")
+
 1. entra a tu ide (vscode, clion, etc) y entra al terminal
 ![image](https://github.com/alejandro-ore/Proyecto-Progra-3-CNN/assets/104222679/1499d0ca-38f1-40f6-956b-343ef299b8e7)
 
