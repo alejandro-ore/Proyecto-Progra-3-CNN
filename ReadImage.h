@@ -53,6 +53,6 @@ public:
 
 void trainingImages(vector<TrainImage> &trainData,string directory);
 
-void testingImages(vector<TestImage> &testData);
+void testingImages(vector<TestImage> &testData,string directory);
 
 #endif //PROYECTO_V0_READIMAGE_H
