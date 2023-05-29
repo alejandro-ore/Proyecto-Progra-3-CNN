@@ -12,7 +12,7 @@ int main(){
     vector<TestImage> testImages;
 
     trainingImages(trainImages,directory);
-    testingImages(testImages);
+    testingImages(testImages,directory);
 
     int layers=2;
     int neurons=64;
