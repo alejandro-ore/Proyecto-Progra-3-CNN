@@ -44,8 +44,7 @@ void trainingImages(vector<TrainImage> &trainData,string directory=""){
     file2.close();
 }
 
-void testingImages(vector<TestImage> &testData){
-    string directory="/home/d4rkmn/Desktop/UTEC/Ciclo III/Programación III/Proyecto-v0/dataset/";
+void testingImages(vector<TestImage> &testData,string directory=""){
     string images_name=directory+"t10k-images-idx3-ubyte";
     string labels_name=directory+"t10k-labels-idx1-ubyte";
 
