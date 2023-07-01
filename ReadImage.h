@@ -2,7 +2,6 @@
 #define PROYECTO_V0_READIMAGE_H
 
 #include <iostream>
-#include <random>
 #include <fstream>
 #include <vector>
 #include <cmath>
@@ -33,6 +32,7 @@ public:
         label=static_cast<int>(c);
     }
     int get_label(){return label;}
+    friend class CNN;
 };
 
 class TrainImage:public Image{
@@ -51,8 +51,8 @@ public:
     friend class CNN;
 };
 
-void trainingImages(vector<TrainImage> &trainData,string directory);
+void trainingImages(vector<TrainImage> &trainData,const string &directory);
 
-void testingImages(vector<TestImage> &testData,string directory);
+void testingImages(vector<TestImage> &testData,const string &directory);
 
 #endif //PROYECTO_V0_READIMAGE_H

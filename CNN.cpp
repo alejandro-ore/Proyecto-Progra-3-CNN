@@ -14,7 +14,7 @@ double sigmoid_derivative(double x){
 layer::layer(int num,int siz,int next){
     n=num;
     size=siz;
-    neurons=vector<neuron>(size);
+    neurons.resize(size);
     for(int i=0;i<size;i++){
         neurons[i]=neuron(next);
     }

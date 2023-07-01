@@ -1,6 +1,6 @@
 #include "ReadImage.h"
 
-void trainingImages(vector<TrainImage> &trainData,string directory=""){
+void trainingImages(vector<TrainImage> &trainData,const string &directory=""){
     string images_name=directory+"train-images-idx3-ubyte";
     string labels_name=directory+"train-labels-idx1-ubyte";
 
@@ -44,7 +44,7 @@ void trainingImages(vector<TrainImage> &trainData,string directory=""){
     file2.close();
 }
 
-void testingImages(vector<TestImage> &testData,string directory=""){
+void testingImages(vector<TestImage> &testData,const string &directory=""){
     string images_name=directory+"t10k-images-idx3-ubyte";
     string labels_name=directory+"t10k-labels-idx1-ubyte";
 
