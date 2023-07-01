@@ -2,12 +2,13 @@
 #include "CNN.h"
 using namespace std;
 
-int main(){
+int main(){ // modificado para usar threads para optimizacion
     random_device rd;
     srand(rd());
 
     string directory="/home/d4rkmn/Desktop/UTEC/Ciclo III/Programación III/Proyecto-v0/dataset/";
     //directory es donde se encuentra ubicado la carpeta con el dataset
+    // (modificar en relacion a tu directorio)
 
     vector<TrainImage> trainImages;
     vector<TestImage> testImages;
@@ -19,30 +20,25 @@ int main(){
     int neurons=128;
     double learning_rate=0.01;
 
-    // 2 layers, 128 neurons each (3 min approx)
-    // 0.2: 6901
-    // 0.1: 7665
-    // 0.05: 7344
-    // 0.01: 8054
-    // 0.0095: 7922
-    // 0.009: 7986
-    // 0.008: 7969
-    // 0.005: 7469
+    // (por favor modificar estos valores hasta q la precision sea la mejor posible)
 
 
-    CNN MNIST(layers,neurons); //2 capas ocultas, de 64 neuronas cada una
+    CNN MNIST(layers,neurons); // 2 capas ocultas, de 64 neuronas cada una
     MNIST.train(trainImages,learning_rate);
-    //entrenando a la red neuronal convolucional
+    // entrenando a la red neuronal convolucional
 
     int count=0;
-
     for(int i=0;i<testImages.size();i++){
         if(MNIST.test(testImages[i])) count++;
-        //MNIST.test(testImages[i]);
-        //do{}while(cin.get()!='\n');
-        //presiona enter en la terminal para pasar a la siguiente imagen
     }
-
+    // modificado para q ahora, si adivina correctamente count aumenta en 1
+    // al final veremos cuantas respuestas correctas tuvo
+    // lo q falta es modificar los valores de layers,neurons y learning rate
+    // hasta q la cantidad de respuestas correctas sea maxima.
+    // lo mejor que yo he encontrado es:
+    // layers:2,neurons:128,learning_rate:0.01,correctas:8054
+    // si consiguen mejor numero de correctas con otro setup avisen
+    
     cout<<"correctas: "<<count<<"\n";
     cout<<"precision: "<<static_cast<double>(count)/10000.0<<"\n";
 
